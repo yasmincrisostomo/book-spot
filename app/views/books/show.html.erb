@@ -1,12 +1,13 @@
-<<div class="container d-flex justify-content-between mt-4">
+<div class="container d-flex justify-content-between mt-4">
   <div class="col-8">
 
     <div class="bg-light rounded border shadow-sm p-3 mb-3">
       <h1><%= @book.title %></h1>
       <p>Author: <%= @book.author %></p>
       <p>Category: <%= @book.category %></p>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @book.photo.key %>)">
-       </div>
+
+       <%= cl_image_tag @book.photo.key %>
+
       <%= link_to "Edit", edit_book_path, class: "btn btn-secondary" %>
       <%= link_to "Delete", book_path(@book.id), class: "btn btn-dark", method: :delete, data: { confirm: 'Are you sure you want to delete this book?' } %>
     </div>
@@ -21,7 +22,7 @@
   <div class="col-3">
     <div class="bg-light rounded border shadow-sm p-3 mb-3 d-flex justify-content-between">
       <h3 class="mb-0">Comprar</h3>
-      <h3 class="mb-0"><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-pinterest-square"></i> <i class="fas fa-envelope-square"></i></h3>
+      <%# <h3 class="mb-0"><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-pinterest-square"></i> <i class="fas fa-envelope-square"></i></h3> %>
     </div>
 
   </div>

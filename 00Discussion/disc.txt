@@ -1,0 +1,1 @@
+rails g book controller index new create destroy show update edit

@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[show edit destroy]
+  skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
     @books = Book.all
@@ -36,6 +37,11 @@ class BooksController < ApplicationController
   def destroy
     @book.destroy
   end
+
+  # def filter
+  #   @book = book.where('categoria x')
+  #   # mostrar index da categoria especifica
+  # end
 
   private
 

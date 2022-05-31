@@ -1,1 +1,68 @@
-// Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.itens-bar{
+  margin-top: 30px;
+  display: flex;
+  margin-top: 100px;
+  justify-content:space-around;
+  align-items:stretch;
+  padding: 20px;
+}
+
+.impotant_text{
+  font-family: sans-serif;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.book_category{
+  width: 150px;
+  object-fit: cover;
+}
+
+
+.texto_centra1{
+  width: 150px;
+  object-fit: cover;
+}
+
+#categories{
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.romance_categorie_card{
+  display: flex;
+  flex-direction: row;
+
+}

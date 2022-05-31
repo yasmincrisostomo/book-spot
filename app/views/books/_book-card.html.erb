@@ -2,7 +2,15 @@
 
 <div class="col mb-2">
     <div class="card mt-2">
-      <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="...">
+      <%# <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="..."> %>
+      <% if book.photo.key %>
+        <%= cl_image_tag book.photo.key %>
+      <% else %>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91zuA6ujDXL.jpg" class="card-img-top" alt="...">
+        <p>AAAA</p>
+      <% end %>
+
+
       <div class="card-body flex-column justify-content-around">
         <h5 class="card-title "><%= book.title %></h5>
         <p class="card-author"><%= book.author %></p>

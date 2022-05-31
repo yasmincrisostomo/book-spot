@@ -8,26 +8,28 @@
 
 <h2 id="categories">Categorias</h2>
 
+<%=link_to "Detalhes dos livros", books_path, class: "detalhes_books" %>
+
 <div class="itens-bar">
 
     <div>
         <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/51p69uLWp6L._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="">
-          <h3>Romance</h3>
+          <%=link_to "Romance", books_path(category: "romance"), class: "detalhes_books" %>
     </div>
 
     <div>
       <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/51fLtg6MDIL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="">
-      <h3>Suspense</h3>
-    </div>
+      <%=link_to "Suspense", books_path(category: "suspense"), class: "detalhes_books" %>
+      </div>
 
     <div>
       <img class= "book_category" src="https://m.media-amazon.com/images/I/51FGgTU-RdL._SY346_.jpg" alt="">
-      <h3>Best Seller</h3>
+      <%=link_to "terror", books_path(category: "terror"), class: "detalhes_books" %>
     </div>
 
     <div>
       <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg" alt="">
-    <h3>Ficção </h3>
+      <%=link_to "Best seler", books_path(category: "best seller"), class: "detalhes_books" %>
   </div>
 
 
@@ -54,7 +56,7 @@
         <p class="card-text">O milionário Wyatt Gray, assim como seus primos texanos, é um homem do campo.
           Membro da tradicional família de cowboys, mas da parte do Wyoming, passou anos correndo o mundo para escapar da convivência com o pai, a quem odeia.
           Cansado de viajar sem criar raízes, ele decide se estabelecer em Grayland, a pedido de sua tia-avó, Mary Grace.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 

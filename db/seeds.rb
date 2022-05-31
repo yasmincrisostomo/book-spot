@@ -2,7 +2,7 @@ require 'faker'
 
 user = User.create(email: "teste@gmail.com", password: "123123")
 
-10.times do
+40.times do
   author = Faker::Book.author
   title = Faker::Book.title
   description = "Summit Lake, uma pequena cidade entre montanhas,

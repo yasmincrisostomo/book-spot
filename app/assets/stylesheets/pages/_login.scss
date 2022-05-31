@@ -1,0 +1,21 @@
+.btn-login-sign {
+  color: #1A374D;
+  border: 1px solid #1A374D;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.btn-login-sign:hover {
+  opacity: 1;
+}
+
+.link {
+  color: #1A374D;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}

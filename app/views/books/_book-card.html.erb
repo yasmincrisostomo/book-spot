@@ -7,9 +7,7 @@
         <h5 class="card-title "><%= book.title %></h5>
         <p class="card-author"><%= book.author %></p>
         <h3 class="card-price">$ <%= book.price %></h3>
-        <p class="button"><a href="#" class="btn btn-primary btn-compra">
-        <%# <%= link_to "Ver detalhes", show_book_path(@book) %> %>
-        </a></p>
+        <%= link_to "Ver detalhes", book_path(book), class: 'btn btn-primary btn-compra' %>
       </div>
     </div>
 </div>

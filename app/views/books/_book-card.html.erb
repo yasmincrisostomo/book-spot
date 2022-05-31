@@ -1,13 +1,15 @@
+
+
 <div class="col mb-2">
     <div class="card mt-2">
       <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="...">
       <div class="card-body flex-column justify-content-around">
-        <h5 class="card-title ">Card title</h5>
-        <p class="card-author">Autorzin</p>
-        <h3 class="card-price">$ 30</h3>
+        <h5 class="card-title "><%= book.title %></h5>
+        <p class="card-author"><%= book.author %></p>
+        <h3 class="card-price">$ <%= book.price %></h3>
         <p class="button"><a href="#" class="btn btn-primary btn-compra">
         <%# <%= link_to "Ver detalhes", show_book_path(@book) %> %>
         </a></p>
       </div>
     </div>
-  </div>
+</div>

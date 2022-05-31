@@ -1,31 +1,38 @@
 <div class="container d-flex justify-content-between mt-4">
-  <div class="col-8">
+  <div class="d-flex col-8 bg-light rounded border shadow-sm p-3 mb-3">
 
-    <div class="bg-light rounded border shadow-sm p-3 mb-3">
+     <% if @book.photo.key %>
+      <div class="me-3">
+        <%= cl_image_tag @book.photo.key %>
+      </div>
+    <% end %>
+
+    <div class="">
       <h1><%= @book.title %></h1>
       <p>Author: <%= @book.author %></p>
       <p>Category: <%= @book.category %></p>
-
-      <p>The next line on the code was commented because it does not work</p>
-      <%# <%= cl_image_tag @book.photo.key %> %>
-
-      <%= link_to "Edit", edit_book_path, class: "btn btn-secondary" %>
-      <%= link_to "Delete", book_path(@book.id), class: "btn btn-dark", method: :delete, data: { confirm: 'Are you sure you want to delete this book?' } %>
-    </div>
-
-    <div class="bg-light rounded border shadow-sm p-3 mb-3">
       <h3>Sinopse</h3>
       <p><%= @book.description %></p>
     </div>
 
   </div>
 
-  <div class="col-3">
-    <div class="bg-light rounded border shadow-sm p-3 mb-3 d-flex justify-content-between">
-      <h3 class="mb-0">Comprar</h3>
-      <%# <h3 class="mb-0"><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-pinterest-square"></i> <i class="fas fa-envelope-square"></i></h3> %>
-    </div>
-
+  <div class="col-3 bg-light rounded border shadow-sm p-3 mb-3">
+    <% if @book.user == current_user %>
+      <div>
+        <h2 class="mb-0">Edit</h2>
+        <%= link_to "Edit", edit_book_path, class: "btn btn-secondary" %>
+        <%= link_to "Delete", book_path(@book.id), class: "btn btn-dark", method: :delete, data: { confirm: 'Are you sure you want to delete this book?' } %>
+      </div>
+    <% elsif current_user.orders.any?{ |order| order.book == @book } %>
+      <p>You already bought this book.</p>
+    <% else %>
+      <div>
+        <h2 class="mb-0">Buy</h2>
+        <p>Price: <%= number_to_currency(@book.price) %></p>
+        <%= link_to "Buy with one click", book_orders_path(@book), method: :post, class: "btn btn-secondary" %>
+      </div>
+    <% end %>
   </div>
 
 </div>

@@ -1,2 +1,30 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div class="container d-flex justify-content-between mt-4">
+  <div class="col-8">
+
+    <div class="bg-light rounded border shadow-sm p-3 mb-3">
+      <h1><%= @book.title %></h1>
+      <p>Author: <%= @book.author %></p>
+      <p>Category: <%= @book.category %></p>
+
+       <%= cl_image_tag @book.photo.key %>
+
+      <%= link_to "Edit", edit_book_path, class: "btn btn-secondary" %>
+      <%= link_to "Delete", book_path(@book.id), class: "btn btn-dark", method: :delete, data: { confirm: 'Are you sure you want to delete this book?' } %>
+    </div>
+
+    <div class="bg-light rounded border shadow-sm p-3 mb-3">
+      <h3>Sinopse</h3>
+      <p><%= @book.description %></p>
+    </div>
+
+  </div>
+
+  <div class="col-3">
+    <div class="bg-light rounded border shadow-sm p-3 mb-3 d-flex justify-content-between">
+      <h3 class="mb-0">Comprar</h3>
+      <%# <h3 class="mb-0"><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-pinterest-square"></i> <i class="fas fa-envelope-square"></i></h3> %>
+    </div>
+
+  </div>
+
+</div>

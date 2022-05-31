@@ -6,7 +6,8 @@
       <p>Author: <%= @book.author %></p>
       <p>Category: <%= @book.category %></p>
 
-       <%# <%= cl_image_tag @book.photo.key %> %>
+      <p>The next line on the code was commented because it does not work</p>
+      <%# <%= cl_image_tag @book.photo.key %> %>
 
       <%= link_to "Edit", edit_book_path, class: "btn btn-secondary" %>
       <%= link_to "Delete", book_path(@book.id), class: "btn btn-dark", method: :delete, data: { confirm: 'Are you sure you want to delete this book?' } %>

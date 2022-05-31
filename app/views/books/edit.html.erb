@@ -1,2 +1,8 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<div class="container mt-3 bg-white p-5 d-flex justify-content-center">
+  <div class="bg-light col-8 p-3">
+    <h2>Edit this book:</h2>
+    <div class="display-flex">
+      <%= render 'form', book: @book %>
+    </div>
+  </div>
+</div>

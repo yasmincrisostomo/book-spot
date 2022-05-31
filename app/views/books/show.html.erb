@@ -2,7 +2,7 @@
   <div class="d-flex col-8 bg-light rounded border shadow-sm p-3 mb-3">
 
      <% if @book.photo.key %>
-      <div class="me-3">
+      <div class="book-img me-3">
         <%= cl_image_tag @book.photo.key %>
       </div>
     <% end %>

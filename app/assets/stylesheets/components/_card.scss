@@ -8,14 +8,19 @@
 }
 
 .btn-compra{
-  margin-top: 3px;
-  border-radius: 15px;
+  margin-top: 3*0.1vw;
+  border-radius: 15*0.1vw;
   background-color: rgb(11, 56, 116);
   border: none;
-  padding: 5px 25px;
+  padding: 5*0.1vw 25*0.1vw;
 }
 
 .single-liner{
   overflow: hidden;
   white-space: nowrap;
+}
+
+.card{
+  padding: 14px 16px 4px 16px;
+  border-radius: 8px;
 }

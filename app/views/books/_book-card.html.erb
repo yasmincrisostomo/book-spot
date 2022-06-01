@@ -1,21 +1,20 @@
 
 
-<div class="col mb-2">
+<div class="col mb-2 ">
     <div class="card mt-3">
       <%# <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="..."> %>
       <% if book.photo.key %>
-        <%= cl_image_tag(book.photo.key, height: 300) %>
+        <%= cl_image_tag(book.photo.key, maxheight: 260, minheight:220 ) %>
       <% else %>
         <img src="https://images-na.ssl-images-amazon.com/images/I/91zuA6ujDXL.jpg" class="card-img-top" alt="...">
-        <p>AAAA</p>
       <% end %>
 
       <div class="card-body flex-column justify-content-around">
         <h5 class="card-title single-liner"><%= book.title %></h5>
         <p class="card-author single-liner"><%= book.author %></p>
-        <h4 class="card-price">$ <%= book.price %></h4>
+        <h4 class="card-price single-liner">$ <%= book.price %></h4>
         <div class="justify-content-center">
-        <%= link_to "Ver detalhes", book_path(book), class: 'btn btn-primary btn-compra' %>
+          <%= link_to "Detalhes", book_path(book), class: 'btn btn-primary btn-compra' %>
         </div>
       </div>
     </div>

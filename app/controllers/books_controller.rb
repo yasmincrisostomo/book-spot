@@ -3,7 +3,11 @@ class BooksController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-    @books = Book.all
+    if params[:category]
+      @books = Book.where(category: params[:category])
+    else
+      @books = Book.all
+    end
   end
 
   def new

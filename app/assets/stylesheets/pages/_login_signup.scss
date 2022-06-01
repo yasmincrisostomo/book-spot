@@ -1,0 +1,20 @@
+@media screen and (max-width: 900px) {
+.signup-img, .login-img {
+  display: none;
+}}
+
+.signup-img{
+  background: url("https://res.cloudinary.com/ddz4cg7lj/image/upload/v1654102716/houcine-ncib-P5L8gICF0CI-unsplash_vbpjv4.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: visible;
+}
+
+.login-img{
+  background: url("https://res.cloudinary.com/ddz4cg7lj/image/upload/v1654051788/alfons-morales-YLSwjSy7stw-unsplash_uk7iji.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: visible;
+}

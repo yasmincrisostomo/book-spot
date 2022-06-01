@@ -4,6 +4,6 @@
     <%= f.input :description %>
     <%= f.input :category %>
     <%= f.input :price %>
-    <%= f.input :photo, as: :file %>
+    <%= f.input :photo, required: true, as: :file %>
     <%= f.button :submit, class: 'btn btn-primary' %>
   <% end %>

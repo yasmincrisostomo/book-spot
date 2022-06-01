@@ -19,6 +19,9 @@
             <%= f.input :password_confirmation,
                         required: true,
                         input_html: { autocomplete: "new-password" } %>
+            <%= f.input :avatar, label: "Profile picture",
+                        required: true,
+                        as: :file %>
           </div>
 
           <div class="form-actions">

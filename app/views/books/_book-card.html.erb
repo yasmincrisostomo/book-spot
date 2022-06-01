@@ -4,7 +4,7 @@
     <div class="card mt-3">
       <%# <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="..."> %>
       <% if book.photo.key %>
-        <%= cl_image_tag(book.photo.key, maxheight: 260, minheight:220 ) %>
+        <%= cl_image_tag(book.photo.key, class: "card-img" ) %>
       <% else %>
         <img src="https://images-na.ssl-images-amazon.com/images/I/91zuA6ujDXL.jpg" class="card-img-top" alt="...">
       <% end %>

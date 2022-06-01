@@ -1,16 +1,33 @@
+// barra de generos
+
 .icons {
   text-align: center;
   margin: 10px auto;
   padding: 5px 0;
+  height: 50px;
+  display: inline;
 }
+
+li > a{
+  text-decoration: none;
+  color: black;
+}
+
 
 .categories {
   text-align: center;
 }
 
+.categories_genreres{
+  display: inline;
+
+
+
+}
+
 .list-inline > li {
   display: inline-block;
-  padding: 0 100px;
+  padding: 0 30px;
   list-style: none;
   font-size: 30px;
 }
@@ -32,5 +49,10 @@
 #categories{
   text-align: center;
   margin-top: 30px;
+
+}
+
+.categories_genres{
+  margin-top: 100px;
 
 }

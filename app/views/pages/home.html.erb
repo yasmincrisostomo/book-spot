@@ -1,35 +1,43 @@
 <%= render "shared/banner" %>
 
-<div class="categories container py-5">
+<div class="categories container p-4 mt-5">
   <h2 class="h3 font-weight-bold">Book Genres</h2>
+  <br><br>
   <div class="row">
-        <div class="icons col-lg-10 mb-4">
-          <ul class="list-inline">
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa-solid fa-heart"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa-solid fa-hat-wizard"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa-solid fa-hands-praying"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <ul class="list-inline">
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa-solid fa-heart"></i>
+          <br>
+          <p>Romance</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa-solid fa-hat-wizard"></i>
+          <br>
+          <p>Ficção</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa-solid fa-bookmark"></i>
+          <br>
+          <p>Suspense</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <i class="fa-solid fa-feather-pointed"></i>
+          <br>
+          <p>Terror</p>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 
+<br><br><br><br>
 <h2 id="categories">Categorias</h2>
 
 <%=link_to "Detalhes dos livros", books_path, class: "detalhes_books" %>
@@ -113,4 +121,3 @@
       </div>
     </div>
   </div>
-

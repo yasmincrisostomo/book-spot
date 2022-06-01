@@ -1,7 +1,7 @@
 <div class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md-6 offset-lg-3">
-      <div class="bg-white rounded p-3 shadow">
+  <div class="row justify-content-center">
+    <div class="col-12 rounded justify-content-center d-flex">
+      <div class="bg-white col-9 col-md-6 col-lg-6 p-3 shadow">
         <h2>Sign up</h2>
 
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -25,6 +25,8 @@
             <%= f.button :submit, "Sign up", class:"btn-login-sign"%>
           </div>
         <% end %>
+      </div>
+      <div class="col-3 signup-img">
       </div>
     </div>
   </div>

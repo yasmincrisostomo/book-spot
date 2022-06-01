@@ -44,10 +44,9 @@ class BooksController < ApplicationController
     redirect_to books_path, notice: 'Book was deleted successfully'
   end
 
-  # def filter
-  #   @book = book.where('categoria x')
-  #   # mostrar index da categoria especifica
-  # end
+  def mine
+    @books = current_user.orders
+  end
 
   private
 

@@ -3,3 +3,9 @@
 @import "books_show";
 @import "login";
 @import '../components/card';
+@import 'login_signup';
+
+.no-books {
+  height: 60vh;
+  background: #fff;
+}

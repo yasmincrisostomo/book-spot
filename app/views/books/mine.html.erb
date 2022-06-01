@@ -1,0 +1,19 @@
+<div class="index-container">
+  <div class="index-banner">
+    <strong> Very cool banner </strong>
+  </div>
+
+<% if @books.empty? %>
+  <div class="no-books">
+    <p>You didn't buy any book.</p>
+  </div>
+<% end %>
+
+  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-around mx-2">
+
+      <% @books.each do |book| %>
+        <%= render "book-card", book: book.book %>
+      <% end %>
+
+  </div>
+</div>

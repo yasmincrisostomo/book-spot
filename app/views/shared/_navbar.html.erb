@@ -3,7 +3,16 @@
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo.png", class: "img-circle logo-nav", alt: "logo" %>
     <% end %>
-
+    <div class="search d-inline">
+     <%= form_tag books_path, method: :get, class:"d-flex" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Find a category"
+        %>
+        <%= submit_tag "Search", class: "search-category-button btn btn-primary" %>
+      <% end %>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

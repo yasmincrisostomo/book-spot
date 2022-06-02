@@ -5,23 +5,25 @@
 
   <div class="card-search-bar row">
     <div class="search-bar col-6 mx-auto">
-        <h2 class="text-center">Search</h2>
       <%= form_tag books_path, method: :get do %>
         <%= text_field_tag :query,
           params[:query],
           class: "form-control",
           placeholder: "Find a category"
         %>
-        <%= submit_tag "Search", class: "search-category-button btn btn-light-blue rounded-pill" %>
+        <%= button_tag type: "submit", class: "search-category-button btn btn-light-blue rounded-pill mt-2" do %>
+          <span>Search <i class="fas fa-search"></i></span>
+        <% end %>
       <% end %>
     </div>
   </div>
 
   <% if @books.empty? %>
-    <div class="no-books">
-      <p>No books in the marketplace yet.</p>
-    </div>
-  <% end %>
+      <div class="no-books text-center pt-5">
+        <p>No books in the marketplace yet.</p>
+        <%= link_to "Do you want to sell a book?", new_book_path, class: "btn btn-light-blue rounded-pill" %>
+      </div>
+    <% end %>
 
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 m-2 p-5">
         <% @books.each do |book| %>

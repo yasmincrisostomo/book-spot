@@ -2,7 +2,7 @@
     <%= f.input :title %>
     <%= f.input :author %>
     <%= f.input :description %>
-    <%= f.input :category , collection: Book::CATEGORIES%>
+    <%= f.input :category, collection: Book::CATEGORIES, selected: "Romance"%>
     <%= f.input :price %>
     <%= f.input :photo, required: true, as: :file %>
     <%= f.button :submit, class: 'btn btn-light-blue rounded-pill' %>

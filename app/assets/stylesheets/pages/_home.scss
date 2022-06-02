@@ -1,5 +1,4 @@
 // barra de generos
-
 .icons {
   text-align: center;
   margin: 10px auto;
@@ -8,11 +7,10 @@
   display: inline;
 }
 
-li > a{
+li > a {
   text-decoration: none;
-  color: black;
+  color: $dark-blue;
 }
-
 
 .categories {
   text-align: center;
@@ -45,17 +43,10 @@ li > a{
 #categories{
   text-align: center;
   margin-top: 30px;
-
 }
 
-.categories_genres{
+.categories_genres {
   margin-top: 100px;
-}
-
-.romance_categorie_card{
-  display: flex;
-  margin-bottom: 200px;
-  justify-content: space-around;
 }
 
 .card-img-top {
@@ -82,7 +73,8 @@ li > a{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.card {
+
+.card-home {
   position: relative;
   margin: 20px 0;
   width: 300px;
@@ -94,7 +86,7 @@ li > a{
     0 20px 20px rgba(0, 0, 0, 0.5);
   transition: 1s;
 }
-.card:hover {
+.card-home:hover {
   z-index: 10000;
   transform: perspective(2000px) rotate(-10deg);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
@@ -113,7 +105,7 @@ li > a{
   transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
   background: #111;
 }
-.card .Box img {
+.card-home .Box img {
   position: absolute;
   top: 0;
   left: 0;
@@ -121,19 +113,14 @@ li > a{
   height: 100%;
   object-fit: cover;
 }
-.card:hover .Box {
+.card-home:hover .Box {
   transform: rotateY(-135deg);
 }
-.card .details {
+.card-home .details {
   position: absolute;
   top: 0;
   left: 0;
   box-sizing: border-box;
   padding: 20px;
   z-index: -1;
-}
-
-h2{
- font-family: "Kdam Thmor Pro" !important
- ;
 }

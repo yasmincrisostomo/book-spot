@@ -1,20 +1,18 @@
-
-
-<div class="col mb-2 ">
+<div class="col-12 col-md-4 col-lg-3 mb-2">
     <div class="card mt-3">
       <%# <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="..."> %>
       <% if book.photo.key %>
-        <%= cl_image_tag(book.photo.key, class: "card-img" ) %>
+        <%= cl_image_tag(book.photo.key, class: "card-img", width: 300, height: 450, crop: :fill ) %>
       <% else %>
         <img src="https://images-na.ssl-images-amazon.com/images/I/91zuA6ujDXL.jpg" class="card-img-top" alt="...">
       <% end %>
 
       <div class="card-body flex-column justify-content-around">
-        <h5 class="card-title single-liner"><%= book.title %></h5>
+        <h5 class="card-titles"><%= book.title %></h5>
         <p class="card-author single-liner"><%= book.author %></p>
-        <h4 class="card-price single-liner">$ <%= book.price %></h4>
+        <h4 class="card-price single-liner"><%= number_to_currency(book.price) %></h4>
         <div class="justify-content-center">
-          <%= link_to "Detalhes", book_path(book), class: 'btn btn-primary btn-compra' %>
+          <%= link_to "Detalhes", book_path(book), class: 'btn btn-light-blue btn-compra' %>
         </div>
       </div>
     </div>

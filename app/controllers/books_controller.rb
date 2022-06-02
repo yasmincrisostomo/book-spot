@@ -4,7 +4,8 @@ class BooksController < ApplicationController
 
   def index
     if params[:query].present?
-      @books = Book.where("category ILIKE ?", "%#{params[:query]}%")
+      sql_query = "title ILIKE :query OR author ILIKE :query OR category ILIKE :query"
+      @books = Book.where(sql_query, query: "%#{params[:query]}%")
     else
       @books = Book.all
     end

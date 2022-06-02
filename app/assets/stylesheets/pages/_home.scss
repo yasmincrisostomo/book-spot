@@ -20,9 +20,6 @@ li > a{
 
 .categories_genreres{
   display: inline;
-
-
-
 }
 
 .list-inline > li {
@@ -54,5 +51,29 @@ li > a{
 
 .categories_genres{
   margin-top: 100px;
+}
+
+.romance_categorie_card{
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: space-around;
+}
+
+.card-img-top {
+  height: 270px;
+
+}
+
+#categories_text{
+  text-align: center;
+}
+
+.book_category{
+  margin:50px;
+
+}
+.container_categories{
+  text-align: center;
+  margin-top: 50px;
 
 }

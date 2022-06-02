@@ -1,58 +1,92 @@
 // barra de generos
-
 .icons {
   text-align: center;
   margin: 10px auto;
   padding: 5px 0;
-  height: 50px;
-  display: inline;
+  height: 30px;
 }
 
-li > a{
+.icon {
+  font-size: 25px;
+}
+
+li > a {
   text-decoration: none;
-  color: black;
+  color: $dark-blue;
 }
 
-
-.categories {
-  text-align: center;
-}
-
-.categories_genreres{
-  display: inline;
-
-
-
+li > a:hover {
+  text-decoration: none;
+  color: $medium-blue;
 }
 
 .list-inline > li {
   display: inline-block;
   padding: 0 30px;
   list-style: none;
-  font-size: 30px;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.itens-bar {
-  margin-top: 30px;
+// BOX CSS
+
+
+.container-box {
+  max-width: 1000px;
+  margin: 60px auto;
   display: flex;
-  margin-top: 100px;
-  justify-content:space-around;
-  align-items:stretch;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.book_category{
-  width: 150px;
+.card-home {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
+    0 20px 20px rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+.card-home:hover {
+  z-index: 10000;
+  transform: perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.card .Box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
+  background: #111;
+}
+.card-home .Box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
-#categories{
-  text-align: center;
-  margin-top: 30px;
-
+.card-home:hover .Box {
+  transform: rotateY(-135deg);
 }
-
-.categories_genres{
-  margin-top: 100px;
-
+.card-home .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
 }

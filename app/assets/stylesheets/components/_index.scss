@@ -5,6 +5,7 @@
 @import "navbar";
 @import "banner";
 @import "footer";
+@import "btn";
 
 .index-banner {
   background: rgb(26,55,77);
@@ -16,4 +17,13 @@
   font-size: 50px;
   display: grid;
   place-items: center;
+}
+
+.search-bar {
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.form-control {
+  border-radius: 5px;
 }

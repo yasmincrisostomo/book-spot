@@ -1,121 +1,81 @@
-<%= render "shared/banner" %>
+<div class="jumbotron bg-cover text-white">
+    <div class="container py-5">
+        <h2 class="display-4 font-weight-bold mt-5 mb-3">E-books</h2>
+        <h5 class="font-italic mb-4 mt-3">The best option for online reading.</h5>
+        <%= link_to "Discover the books!", books_path, class: "btn-home mt-5 btn-lg rounded-pill" %>
+    </div>
+</div>
 
-<div class="categories container p-4 mt-5">
-  <h2 class="h3 font-weight-bold">Book Genres</h2>
-  <br><br>
+<div class="container p-4 mt-5">
   <div class="row">
-    <ul class="list-inline">
+    <ul class="icons list-inline">
       <li>
         <a href="#" target="_blank">
-          <i class="fa-solid fa-heart"></i>
-          <br>
+          <i class="icon fa-solid fa-heart"></i>
           <p>Romance</p>
         </a>
       </li>
       <li>
         <a href="#" target="_blank">
-          <i class="fa-solid fa-hat-wizard"></i>
-          <br>
-          <p>Ficção</p>
+          <i class="icon fa-solid fa-hat-wizard"></i>
+          <p>Fiction</p>
         </a>
       </li>
       <li>
         <a href="#" target="_blank">
-          <i class="fa-solid fa-bookmark"></i>
-          <br>
-          <p>Suspense</p>
+          <i class="icon fas fa-skull-crossbones"></i>
+          <p>Thriller</p>
         </a>
       </li>
       <li>
         <a href="#" target="_blank">
-          <i class="fa-solid fa-feather-pointed"></i>
-          <br>
-          <p>Terror</p>
+          <i class="icon fas fa-praying-hands"></i>
+          <p>Religion</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <i class="icon fas fa-hands-helping"></i>
+          <p>Self-help</p>
         </a>
       </li>
     </ul>
   </div>
 </div>
 
-<br><br><br><br>
-<h2 id="categories">Categorias</h2>
+<br>
+<br>
+<br>
 
-<%=link_to "Detalhes dos livros", books_path, class: "detalhes_books" %>
-
-<div class="itens-bar">
-
-    <div>
-        <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/51p69uLWp6L._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="">
-          <%=link_to "Romance", books_path(category: "romance"), class: "detalhes_books" %>
+<div class="container-box mt-5 p-5">
+  <div class="card-home">
+    <div class="Box">
+      <img src="https://m.media-amazon.com/images/G/01/toys-and-games/EC_Search_Test/Category_Lifestyle/harryPotter_books/xcm_banners_search-experiment-730x970-fullbleed_730x970_us-en.jpg">
     </div>
-
-    <div>
-      <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/51fLtg6MDIL._SY344_BO1,204,203,200_QL70_ML2_.jpg" alt="">
-      <%=link_to "Suspense", books_path(category: "suspense"), class: "detalhes_books" %>
-      </div>
-
-    <div>
-      <img class= "book_category" src="https://m.media-amazon.com/images/I/51FGgTU-RdL._SY346_.jpg" alt="">
-      <%=link_to "terror", books_path(category: "terror"), class: "detalhes_books" %>
-    </div>
-
-    <div>
-      <img class= "book_category" src="https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg" alt="">
-      <%=link_to "Best seler", books_path(category: "best seller"), class: "detalhes_books" %>
-  </div>
-
-
-</div>
-
-
-
-
-<div class="justify-content-center">
-
-  <h1 class="text-center mb-4"> Ler como hábito de uma vida melhor</h1>
-
-</div>
-
-
-  <div class= "d-flex">
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/51ImEAcE59L._SY346_.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">O Devasso e a Viúva Virgem: Novela Spin-off da Série Alma de Cowboy </h5>
-        <p class="card-text">O milionário Wyatt Gray, assim como seus primos texanos, é um homem do campo.
-          Membro da tradicional família de cowboys, mas da parte do Wyoming, passou anos correndo o mundo para escapar da convivência com o pai, a quem odeia.
-          Cansado de viajar sem criar raízes, ele decide se estabelecer em Grayland, a pedido de sua tia-avó, Mary Grace.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/516lFndZ+cL._SY346_.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Orgulho e Preconceito</h5>
-        <p class="card-text"> romance retrata a relação entre Elizabeth Bennet (Lizzy) e Fitzwilliam Darcy na Inglaterra rural do século XVIII. Lizzy possui outras quatro irmãs, nenhuma delas casadas, o que Sra. Bennet, mãe de Lizzy, considera um absurdo. Quando Sr. Bingley, jovem bem sucedido, aluga uma mansão próxima da casa dos Bennet, Sra. Bennet vê nele um possível marido para uma de suas filhas. </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://m.media-amazon.com/images/I/51PjgRe58sL._SY346_.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Dom Casmurro</h5>
-        <p class="card-text">Prometido para o seminário desde o nascimento, o jovem carioca Bentinho precisa encontrar um jeito de fugir da vida na Igreja e realizar seu verdadeiro sonho: casar-se com a vizinha Capitu. Uma história de paixão, obsessão e ciúme se desenrola, em uma narrativa cheia de reviravoltas, que aos poucos constrói um retrato da sociedade brasileira.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51LfawapFKL._SX344_BO1,204,203,200_.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Cem anos de solidão</h5>
-        <p class="card-text">Edição comemorativa em capa dura dos 50 anos de publicação da obra-prima de Gabriel García Márquez.Em Cem anos de solidão, um dos maiores clássicos da literatura, o prestigiado autor narra a incrível e triste história dos Buendía - a estirpe de solitários para a qual não será dada “uma segunda oportunidade sobre a terra” e apresenta o maravilhoso universo da fictícia Macondo, onde se passa o romance. </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    <div class="details">
+      <h2>Harry Potter</h2>
+        <p>Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle.</p>
+      </p>
     </div>
   </div>
+
+  <div class="card-home">
+    <div class="Box">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51Tg5NlTHLL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg">
+    </div>
+    <div class="details">
+      <h2>Game of Thrones</h2>
+      <p>You've read the books. You've watched the hit series on HBO. Now acclaimed novelist Daniel Abraham and illustrator Tommy Patterson bring George R. R. Martin’s epic fantasy masterwork A Game of Thrones to majestic new life in the pages of this full-color graphic novel.</p>
+    </div>
+  </div>
+
+  <div class="card-home">
+    <div class="Box">
+      <img src="https://m.media-amazon.com/images/I/510eSDc1hzL.jpg">
+    </div>
+    <div class="details">
+      <h2>The Hunger Games</h2>
+        <p>Against all odds, Katniss has won the Hunger Games. She and fellow District 12 tribute Peeta Mellark are miraculously still alive. Katniss should be relieved, happy even. After all, she has returned to her family and her longtime friend, Gale. Yet nothing is the way Katniss wishes it to be. </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.btn-light-blue {
+  background-color: $light-blue;
+  color: white;
+  &:hover {
+    background-color: $medium-blue;
+    color: white;
+  }
+}
+
+.btn-medium-blue {
+  background-color: $medium-blue;
+  color: white;
+  &:hover {
+    background-color: $light-blue;
+    color: white;
+  }
+}

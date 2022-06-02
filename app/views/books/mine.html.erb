@@ -5,7 +5,10 @@
 
   <% if @books.empty? %>
     <div class="no-books text-center pt-5">
-      <p>Any order yet.</p>
+      <h3>Any order yet.</h3>
+      <div class="justify-content-center">
+        <iframe src="https://giphy.com/embed/WoWm8YzFQJg5i" width="480" height="351" frameBorder="0" class="giphy-embed my-3" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cartoons-comics-sea-reading-WoWm8YzFQJg5i"></a></p>
+      </div>
       <%= link_to "Discover the books!", books_path, class: "btn btn-light-blue rounded-pill" %>
     </div>
   <% end %>

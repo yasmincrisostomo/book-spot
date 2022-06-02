@@ -3,7 +3,7 @@
     <h2><strong>BOOKSTORE</strong></h2>
   </div>
 
-  <div class="card-search-bar row">
+  <div class="card-search-bar row text-center">
     <div class="search-bar col-6 mx-auto">
       <%= form_tag books_path, method: :get do %>
         <%= text_field_tag :query,
@@ -11,7 +11,7 @@
           class: "form-control",
           placeholder: "Find a category"
         %>
-        <%= button_tag type: "submit", class: "search-category-button btn btn-light-blue rounded-pill mt-2" do %>
+        <%= button_tag type: "submit", class: "search-category-button btn btn-light-blue rounded-pill mt-3" do %>
           <span>Search <i class="fas fa-search"></i></span>
         <% end %>
       <% end %>

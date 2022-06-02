@@ -39,7 +39,6 @@ li > a{
 }
 
 .book_category{
-  width: 150px;
   object-fit: cover;
 }
 
@@ -61,34 +60,15 @@ li > a{
 
 .card-img-top {
   height: 270px;
-
 }
 
 #categories_text{
   text-align: center;
 }
 
-.book_category{
-  margin:50px;
-
-}
-.container_categories{
+.container_categories {
   text-align: center;
   margin-top: 50px;
-
-}
-
-.search-bar{
-  margin-top: 30px;
-  padding: 50px;
-  background-image: url(https://media.istockphoto.com/vectors/books-seamless-pattern-vector-id470721440?k=20&m=470721440&s=612x612&w=0&h=o3yXdl1xi_kbMdyP6NRirKX4Y0m8WjVgul9zl4i5LtU=) {opacity: 0.05};
-  box-shadow: 2px 2px 3px rgba(136, 136, 136,0.3);
-
-}
-
-.search-category-button{
-  border: black ;
-
 }
 
 

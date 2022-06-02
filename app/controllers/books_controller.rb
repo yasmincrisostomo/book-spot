@@ -3,8 +3,8 @@ class BooksController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
-    if params[:category]
-      @books = Book.where(category: params[:category])
+    if params[:query].present?
+      @books = Book.where("category ILIKE ?", "%#{params[:query]}%")
     else
       @books = Book.all
     end

@@ -76,7 +76,7 @@ book6 = Book.new(
   title: "Atomic Habits",
   author: "James Clear",
   description: "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
-  category: "Nonfiction",
+  category: "Self-help",
   price: 80
 )
 

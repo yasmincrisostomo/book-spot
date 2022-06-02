@@ -3,8 +3,11 @@
   text-align: center;
   margin: 10px auto;
   padding: 5px 0;
-  height: 50px;
-  display: inline;
+  height: 30px;
+}
+
+.icon {
+  font-size: 25px;
 }
 
 li > a {
@@ -12,56 +15,19 @@ li > a {
   color: $dark-blue;
 }
 
-.categories {
-  text-align: center;
-}
-
-.categories_genreres{
-  display: inline;
+li > a:hover {
+  text-decoration: none;
+  color: $medium-blue;
 }
 
 .list-inline > li {
   display: inline-block;
   padding: 0 30px;
   list-style: none;
-  font-size: 30px;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-
-.itens-bar {
-  margin-top: 30px;
-  display: flex;
-  margin-top: 100px;
-  justify-content:space-around;
-  align-items:stretch;
-  padding: 20px;
-}
-
-.book_category{
-  object-fit: cover;
-}
-
-#categories{
-  text-align: center;
-  margin-top: 30px;
-}
-
-.categories_genres {
-  margin-top: 100px;
-}
-
-.card-img-top {
-  height: 270px;
-}
-
-#categories_text{
-  text-align: center;
-}
-
-.container_categories {
-  text-align: center;
-  margin-top: 50px;
-}
-
 
 // BOX CSS
 

@@ -1,19 +1,18 @@
 <div class="index-container">
   <div class="index-banner">
-    <strong> Very cool banner </strong>
+    <h2><strong>ORDERS</strong></h2>
   </div>
 
-<% if @books.empty? %>
-  <div class="no-books">
-    <p>You didn't buy any book.</p>
-  </div>
-<% end %>
+  <% if @books.empty? %>
+    <div class="no-books text-center pt-5">
+      <p>Any order yet.</p>
+      <%= link_to "Discover the books!", books_path, class: "btn btn-light-blue rounded-pill" %>
+    </div>
+  <% end %>
 
-  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-around mx-2">
-
-      <% @books.each do |book| %>
-        <%= render "book-card", book: book.book %>
-      <% end %>
-
-  </div>
+  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 m-2 p-5">
+        <% @books.each do |book| %>
+          <%= render "book-card", book: book.book %>
+        <% end %>
+    </div>
 </div>

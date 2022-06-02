@@ -13,3 +13,9 @@
 @import "pages/index";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

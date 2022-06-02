@@ -142,3 +142,24 @@ book8.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/jesus.
                    filename: 'jesus.png', content_type: 'image/png')
 
 book8.save!
+
+book9 = Book.new(
+  user: user,
+  title: "Ugly Love",
+  author: "Colleen Hoover",
+  description: "When Tate Collins meets airline pilot Miles Archer, she doesn't think it's love at first sight.
+   They wouldn't even go so far as to consider themselves friends.
+    The only thing Tate and Miles have in common is an undeniable mutual attraction.
+     Once their desires are out in the open, they realize they have the perfect set-up.
+      He doesn't want love, she doesn't have time for love, so that just leaves the sex.
+       Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules
+        Miles has for her.
+  ",
+  category: "Romance",
+  price: 55
+)
+
+book9.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ugly.jpg')),
+                   filename: 'ugly.jpg', content_type: 'image/png')
+
+book9.save!

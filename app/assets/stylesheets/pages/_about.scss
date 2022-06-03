@@ -13,7 +13,7 @@
   background: #ccc;
 }
 
-.book {
+.book-animation {
   margin-top: 200px;
   transform-style: preserve-3d;
   position: relative;
@@ -67,7 +67,7 @@
   background: #fafafa;
 }
 
-.book:hover .wagon-img{
+.book-animation:hover .wagon-img{
   background-image: url("https://res.cloudinary.com/ddz4cg7lj/image/upload/v1654265039/tremdomundoreverso_zvxppb.png");
   transform: scaleX(-1);
   background-size: contain;
@@ -79,41 +79,41 @@
   background: #fdfdfd;
 }
 
-.book:hover .front {
+.book-animation:hover .front {
   transform: rotateY(-160deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page1 {
+.book-animation:hover .page1 {
   transform: rotateY(-150deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page2 {
+.book-animation:hover .page2 {
   transform: rotateY(-30deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page3 {
+.book-animation:hover .page3 {
   transform: rotateY(-140deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page4 {
+.book-animation:hover .page4 {
   transform: rotateY(-40deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page5 {
+.book-animation:hover .page5 {
   transform: rotateY(-130deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .page6 {
+.book-animation:hover .page6 {
   transform: rotateY(-50deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
 }
 
-.book:hover .back {
+.book-animation:hover .back {
   transform: rotateY(-20deg) scale(1.1);
 }

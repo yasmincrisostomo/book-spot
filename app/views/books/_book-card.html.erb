@@ -1,5 +1,5 @@
-<div class="col-12 col-md-4 col-lg-3 mb-2">
-    <div class="card mt-2">
+<div class="col-12 col-md-4 col-lg-3 mb-2 d-flex justify-content-center">
+    <div class="card mt-2 px-4">
       <%# <img src="https://i.ibb.co/gTvbqnQ/harry-potter.jpg" class="card-img-top" alt="..."> %>
       <% if book.photo.key %>
         <%= cl_image_tag(book.photo.key, class: "card-img", width: 300, height: 450, crop: :fill ) %>

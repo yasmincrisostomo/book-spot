@@ -6,9 +6,15 @@ $yellow:#ffc928;
   background-color: #CCCCCC;
   overflow: hidden;
   // animation: dayTime 40s linear infinite;
-  height: 25vh;
+  height: 200px;
 }
 
+.stage{
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 14px;
+}
 
 
 
@@ -16,7 +22,7 @@ $yellow:#ffc928;
 
 .train {
   position: relative;
-  bottom: 1px;
+  bottom: 100px;
   top: 10px;
   width: 310px;
   z-index: 1;

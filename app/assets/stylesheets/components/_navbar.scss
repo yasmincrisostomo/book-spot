@@ -14,3 +14,17 @@
   width: 50px;
   margin-left: 10px;
 }
+
+.dropdown-menu {
+  border-radius: 6px;
+  background-color: $dark-blue;
+  opacity: 0.7;
+}
+
+.dropdown-item {
+  color: white;
+  &:hover {
+    background-color: $light-blue;
+    color: white;
+  }
+}

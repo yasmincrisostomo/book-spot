@@ -153,13 +153,47 @@ book9 = Book.new(
      Once their desires are out in the open, they realize they have the perfect set-up.
       He doesn't want love, she doesn't have time for love, so that just leaves the sex.
        Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules
-        Miles has for her.
-  ",
+        Miles has for her.",
   category: "Romance",
   price: 55
 )
 
 book9.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/ugly.jpg')),
-                   filename: 'ugly.jpg', content_type: 'image/png')
+                   filename: 'ugly.jpg', content_type: 'image/jpg')
 
 book9.save!
+
+book10 = Book.new(
+  user: user,
+  title: "The Terminal List",
+  author: "Jack Carr",
+  description: "On his last combat deployment, Lieutenant Commander
+   James Reece's entire team was killed in a catastrophic ambush.
+   But when those dearest to him are murdered on the day of his homecoming,
+   Reece discovers that this was not an act of war by a foreign enemy
+    but a conspiracy that runs to the highest levels of government.",
+  category: "Thriller",
+  price: 30
+)
+
+book10.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/terminal.jpg')),
+                    filename: 'terminal.jpg', content_type: 'image/jpg')
+
+book10.save!
+
+book11 = Book.new(
+  user: user,
+  title: "This Naked Mind",
+  author: "Annie Grace",
+  description: "Many people question whether drinking has become too big a part of their lives,
+   and worry that it may even be affecting their health. But, they resist change because they fear losing the pleasure
+    and stress-relief associated with alcohol,
+   and assume giving it up will involve deprivation and misery.",
+  category: "Self-help",
+  price: 45
+)
+
+book11.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/mind.png')),
+                    filename: 'mind.png', content_type: 'image/png')
+
+book11.save!

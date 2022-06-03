@@ -197,3 +197,87 @@ book11.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/mind.
                     filename: 'mind.png', content_type: 'image/png')
 
 book11.save!
+
+book12 = Book.new(
+  user: user,
+  title: "Book Lovers",
+  author: "Emily Henry",
+  description: "Nora Stephens' life is books—she's read them all—and she is
+   not that type of heroine. Not the plucky one, not the laidback dream girl, and especially not the sweetheart.
+    In fact, the only people Nora is a heroine for are her clients, for whom she lands enormous deals as
+     a cutthroat literary agent, and her beloved little sister Libby.",
+  category: "Romance",
+  price: 65
+)
+
+book12.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/lover.png')),
+                    filename: 'lover.png', content_type: 'image/png')
+
+book12.save!
+
+book13 = Book.new(
+  user: user,
+  title: "Verity",
+  author: "Colleen Hoover",
+  description: "Lowen Ashleigh is a struggling writer on the brink of financial ruin when she accepts
+   the job offer of a lifetime.
+   Jeremy Crawford, husband of bestselling author Verity Crawford, has hired Lowen to complete the remaining
+   books in a successful series his injured wife is unable to finish.",
+  category: "Thriller",
+  price: 80
+)
+
+book13.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/verity.png')),
+                    filename: 'verity.png', content_type: 'image/png')
+
+book13.save!
+
+book14 = Book.new(
+  user: user,
+  title: "Hopeless",
+  author: "Colleen Hoover",
+  description: "Beloved and bestselling author Colleen Hoover returns with the spellbinding story of two young
+   people with devastating pasts who embark on a passionate, intriguing journey to discover the lessons of life, love,
+    trust - and above all, the healing power that only truth can bring.",
+  category: "Romance",
+  price: 85
+)
+
+book14.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/hopeless.png')),
+                    filename: 'hopeless.png', content_type: 'image/png')
+
+book14.save!
+
+book15 = Book.new(
+  user: user,
+  title: "Tiny Habits",
+  author: "BJ Fogg",
+  description: "BJ FOGG is here to change your life—and revolutionize how we think about human behavior. Based on twenty
+   years of research and Fogg's experience coaching more than 40,000 people, Tiny Habits cracks the code of habit
+    formation. With breakthrough discoveries in every chapter, you'll learn the simplest proven ways to transform your
+     life. Fogg shows you how to feel good about your successes instead of bad about your failures.",
+  category: "Self-help",
+  price: 60
+)
+
+book15.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/tiny.png')),
+                    filename: 'tiny.png', content_type: 'image/png')
+
+book15.save!
+
+book16 = Book.new(
+  user: user,
+  title: "Enough Already",
+  author: "Valerie Bertinelli",
+  description: "Behind the curtain of her happy on-screen persona, Valerie Bertinelli's life has been no easy ride,
+   especially when it comes to her own self-image and self-worth. She waged a war against herself for years,
+    learning to equate her value to her appearance as a child star on One Day at a Time and punishing herself in
+     order to fit into the unachievable Hollywood mold.",
+  category: "Self-help",
+  price: 90
+)
+
+book16.photo.attach(io: File.open(File.join(Rails.root, 'app/assets/images/enough.png')),
+                    filename: 'enough.png', content_type: 'image/png')
+
+book16.save!

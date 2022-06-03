@@ -1,0 +1,252 @@
+$red:#e04f60;
+$yellow:#ffc928;
+
+
+.train-body {
+  background-color: #CCCCCC;
+  overflow: hidden;
+  // animation: dayTime 40s linear infinite;
+  height: 25vh;
+}
+
+
+
+
+/*TRAIN*/
+
+.train {
+  position: relative;
+  bottom: 1px;
+  top: 10px;
+  width: 310px;
+  z-index: 1;
+}
+
+.wagon,
+.cabin,
+.chimney {
+  border-radius: 4px 4px 0 0;
+  border-top: 4px solid $yellow;
+}
+
+.wagon,
+.motor {
+  border-bottom: 2px solid $yellow;
+}
+
+.wagon,
+.locomotive {
+  display: inline-block;
+  width: 70px;
+  height: 55px;
+  background-color: $red;
+  position: relative;
+}
+
+
+/*WHEELS*/
+
+.wagon:before,
+.wagon:after,
+.motor:before,
+.motor:after,
+.cabin:after {
+  content: ' ';
+  color: #fff;
+  padding: 6px;
+  position: absolute;
+  border-radius: 46%;
+  border: 6px solid #333;
+  bottom: -10px;
+  background-color: #666;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+.wagon:before {
+  left: 6px;
+}
+
+.wagon:after {
+  right: 6px;
+}
+
+.motor:before {
+  left: 32px;
+}
+
+.motor:after {
+  right: 4px;
+}
+
+.cabin:after {
+  bottom: -50px;
+  padding: 8px;
+  left: 3px;
+}
+
+
+/*LOCOMOTIVE*/
+
+.locomotive {
+  background-color: transparent;
+}
+
+.locomotive .cabin {
+  width: 58px;
+  height: 35px;
+  background-color: $red;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+
+/*locomotive window*/
+
+.locomotive .cabin:before {
+  content: ' ';
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border-radius: 3px;
+  border: 3px solid pink;
+  background-color: #f1f1f1;
+}
+
+.locomotive .motor {
+  display: inline-block;
+  width: 85px;
+  height: 40px;
+  background-color: $red;
+  position: relative;
+  border-radius: 0 8px 0px 0px;
+}
+
+.locomotive .chimney {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: $red;
+  right: -6px;
+  bottom: 10px;
+  -webkit-animation: puf 4s 2;
+  animation: puf 4s 2;
+}
+
+.locomotive .light {
+  content: " ";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 3px solid pink;
+}
+
+.train {
+  -webkit-animation: voyage 20s linear infinite;
+  animation: voyage 20s linear infinite;
+}
+
+
+/*ANIMATIONS*/
+
+@-webkit-keyframes dayTime {
+  0% {
+    background-color: #cce6fd;
+  }
+  50% {
+    background-color: #252645;
+  }
+  100% {
+    background-color: #cce6fd;
+  }
+}
+
+@keyframes dayTime {
+  0% {
+    background-color: #cce6fd;
+  }
+  50% {
+    background-color: #252645;
+  }
+  100% {
+    background-color: #cce6fd;
+  }
+}
+
+@-webkit-keyframes puf {
+  0% {
+    bottom: 0px
+  }
+  25% {
+    bottom: -1px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
+@keyframes puf {
+  0% {
+    bottom: 0px
+  }
+  25% {
+    bottom: -1px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
+@-webkit-keyframes wind {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+@keyframes wind {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes voyage {
+  0% {
+    left: -310px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes voyage {
+  0% {
+    left: -310px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

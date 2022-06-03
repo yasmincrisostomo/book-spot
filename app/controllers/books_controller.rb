@@ -49,6 +49,9 @@ class BooksController < ApplicationController
     @books = current_user.orders
   end
 
+  def about
+  end
+
   private
 
   def set_book

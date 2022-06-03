@@ -19,7 +19,11 @@
             <%= link_to "Sell a Book", new_book_path, class: "nav-link" %>
           </li>
 
-          <li class="nav-item dropdown">
+          <li>
+            <%= link_to "About", about_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item dropdown px-3">
             <% if current_user.avatar.attached? %>
               <%= cl_image_tag current_user.avatar.key, class: "avatar dropdown-toggle", width: 40, height: 40, crop: :thumb, gravity: :face, id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <% else %>

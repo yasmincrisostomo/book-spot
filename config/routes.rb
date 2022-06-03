@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   end
   resources :books, only: :destroy
   get "my_books", to: "books#mine", as: "my_books"
+  get "about", to: "books#about", as: "about"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

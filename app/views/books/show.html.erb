@@ -37,5 +37,13 @@
         </div>
       <% end %>
     </div>
+  <% else %>
+    <div class="book-side-box col-3">
+        <div class="text-center">
+          <h2 class="mb-2">Buy</h2>
+          <p>Price: <%= number_to_currency(@book.price) %></p>
+          <%= link_to "Buy with one click", new_user_session_path, class: "btn fw-bold btn-light-blue w-100 rounded-pill" %>
+        </div>
+    </div>
   <% end %>
 </div>

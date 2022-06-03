@@ -11,8 +11,11 @@ class OrdersController < ApplicationController
     @order.book = @book
     @order.user = current_user
 
-    @order.save
-    redirect_to book_path(@book)
+    if @order.save
+      redirect_to book_path(@book)
+    else
+      render :new
+    end
   end
 
   private

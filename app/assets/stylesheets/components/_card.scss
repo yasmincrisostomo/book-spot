@@ -6,6 +6,7 @@
 .card-body > * {
   text-align: center;
   margin: 0;
+  max-width: 218px;
 }
 
 .btn-compra {
@@ -21,6 +22,7 @@
 }
 
 .card {
+  max-width: 218px;
   padding: 14px 12px 4px 12px;
   margin: 0 3px;
   border-radius: 8px;
@@ -36,4 +38,9 @@
 .card-price {
   font-size: 16px;
   padding: 8px;
+}
+
+.titles-width{
+  overflow-x: hidden;
+  box-sizing: border-box;
 }

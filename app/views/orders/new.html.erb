@@ -1,0 +1,19 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 rounded justify-content-center d-flex">
+      <div class="bg-white col-9 col-md-6 col-lg-6 p-3 shadow">
+        <h2>Payment</h2>
+        <div>
+          <%= simple_form_for [@book, @order] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :card_number %>
+          <%= f.input :card_code %>
+          <%= f.input :card_expiration %>
+          <%= f.button :submit, class: 'btn btn-light-blue rounded-pill' %>
+        <% end %>
+        </div>
+      </div>
+      <div class="col-3 new-book-img"></div>
+    </div>
+  </div>
+</div>

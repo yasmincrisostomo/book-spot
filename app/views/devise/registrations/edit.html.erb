@@ -31,11 +31,11 @@
           </div>
 
            <div class="form-actions">
-            <%= f.button :submit, "Update", class:"btn-login-sign"%>
+            <%= f.button :submit, "Update", class:"btn btn-light-blue rounded-pill mb-2"%>
           </div>
         <% end %>
 
-        <%= link_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+        <%= link_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"link" %>
 
       </div>
     </div>

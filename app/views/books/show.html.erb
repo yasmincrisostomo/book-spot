@@ -33,7 +33,7 @@
         <div class="text-center">
           <h2 class="mb-2">Buy</h2>
           <p>Price: <%= number_to_currency(@book.price) %></p>
-          <%= link_to "Buy now with 1-Click", book_orders_path(@book), method: :post, class: "btn fw-bold btn-light-blue w-100 rounded-pill" %>
+          <%= link_to "Buy now with 1-Click", new_book_order_path(@book), class: "btn fw-bold btn-light-blue w-100 rounded-pill" %>
         </div>
       <% end %>
     </div>
